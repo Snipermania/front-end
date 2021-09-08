@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+    .dark {
+        background-color: black;
+        border: double 10px;
+    }
+    
+    .jumbotron {
+        background-color: cadetblue;
+        padding: 20px;
+        border-radius: 25%;
+        text-align: center;
+    }
+    
+    td {
+        color: cornsilk;
+        height: 120px;
+        width: 120px;
+        text-align: center;
+        font-size: 80px;
+    }
+    
+    td:hover {
+        cursor: pointer;
+        height: 130px;
+        width: 130px;
+        background-color: gray;
+        transition: all ease 0.5s;
+    }
+    
+    table {
+        margin: 100px auto;
+        border: solid white 5px;
+    }
+    
+    .rules ul {
+        color: cyan;
+    }
+</style>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Tic Tac Toe</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+
+<body class="dark">
+    <div class="container-fluid">
+        <div class="jumbotron">
+            <h1 class="display-4"><u>WELCOME TO TIC-TAC-TOE!</u></h1><br><br>
+            <h3>Click to clear the board</h3>
+            <button type="button" id="restart" class="btn btn-primary btn-lg">Restart</button>
+        </div>
+        <div class="rules">
+            <ul>
+                <h3><u>Rules:</u></h3>
+                <li>Player 1 >>> 'X'</li>
+                <li>Player 2 >>> 'O'</li>
+                <li>If player manages to mark 'X'/'O' consicutively three times either horizontally <br> or vertically or slantingly then player1/player2 is the winner respectively.</li>
+                <li>In case no one wins then its a draw and players can restart the game by clicking on restart button.</li>
+            </ul>
+        </div>
+        <table>
+            <tr>
+                <td class="border-light border"></td>
+                <td class="border-light border"></td>
+                <td class="border-light border"></td>
+            </tr>
+            <tr>
+                <td class="border-light border"></td>
+                <td class="border-light border"></td>
+                <td class="border-light border"></td>
+            </tr>
+            <tr>
+                <td class="border-light border"></td>
+                <td class="border-light border"></td>
+                <td class="border-light border"></td>
+            </tr>
+        </table>
+        <div class="jumbotron" style="border-radius: 0%;"><br><br></div>
+        <script src="TicTacToe.js"></script>
+    </div>
+</body>
+
+</html>
