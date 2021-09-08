@@ -1,3 +1,3 @@
 # front-end
 
-tictactoe:  https://snipermania.github.io/front-end/TicTacToe.html
+tictactoe:  https://snipermania.github.io/front-end/TicTacToe/TicTacToe.html
